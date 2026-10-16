@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#e8dff0">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="A little letter for a new beginning, with love.">
+  <meta property="og:title" content="A Letter to Take With You">
+  <meta property="og:description" content="A little love, tucked inside.">
+  <meta property="og:type" content="website">
+  <title>A Letter to Take With You · For My Love</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23eee5f4'/%3E%3Cpath d='M10 20h44v29H10Z' fill='%23c7afd8' stroke='%23775491' stroke-width='2'/%3E%3Cpath d='m10 20 22 17 22-17' fill='%23ddcce8' stroke='%23775491' stroke-width='2'/%3E%3Cpath d='M32 45c-12-7-11-15-5-15 3 0 5 2 5 4 0-2 2-4 5-4 6 0 7 8-5 15' fill='%23845d9e'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --ink: #403047; --muted: #725e78; --purple: #76518e;
+      --paper: #fffbf1; --lilac: #e8dff0; --border: #cbbad2;
+      --serif: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+      --body: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --note: "Segoe Print", "Bradley Hand", "Apple Chancery", Georgia, serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+    body {
+      margin: 0; color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.85;
+      background:
+        radial-gradient(ellipse at 90% 0, #fff1cbbd, transparent 38rem),
+        radial-gradient(ellipse at 0 35rem, #ddd0eaa6, transparent 38rem),
+        linear-gradient(180deg, #f2edf5, #eae1f0 40rem, #f4eceb);
+      overflow-wrap: break-word;
+    }
+    body::before {
+      content: ""; position: absolute; inset: 0 0 auto; height: 850px; pointer-events: none; z-index: -1;
+      background: linear-gradient(118deg, transparent 35%, #fff7de66 35.2%, #fff7de66 43%, transparent 43.2%, transparent 48%, #fff7de44 48.2%, #fff7de44 61%, transparent 61.2%);
+    }
+    h1, h2, h3, p, figure, blockquote { margin: 0; }
+    h1, h2, h3 { font-family: var(--serif); font-weight: 400; }
+    a { color: #704b87; text-underline-offset: 4px; }
+    button { font: inherit; color: inherit; }
+    button, summary, a { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+    button, summary { cursor: pointer; }
+    svg { display: block; max-width: 100%; }
+    img { display: block; max-width: 100%; }
+    [hidden] { display: none !important; }
+    :focus-visible { outline: 3px solid #70418f; outline-offset: 5px; }
+    ::selection { background: #d9c4e7; color: #34203e; }
+    summary { list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    .defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; padding: 0; border: 0; }
+    .hand { font-family: var(--note); font-style: italic; }
+    .skip { position: absolute; top: 10px; left: 10px; padding: 10px 18px; background: var(--paper); z-index: 100; transform: translateY(-180%); }
+    .skip:focus { transform: translateY(0); }
+    .opening { width: min(100% - 28px, 840px); margin: 0 auto; padding: 48px 0 32px; text-align: center; }
+    .kicker { color: #755b7b; font-size: 13px; letter-spacing: .18em; text-transform: uppercase; line-height: 1.5; margin-bottom: 18px; }
+    h1 { font-size: clamp(32px, 5.2vw, 48px); line-height: 1.2; letter-spacing: -.035em; max-width: 620px; margin: 0 auto; }
+    .envelope-scene {
+      position: relative; padding: 100px 72px 94px; width: min(100%, 700px); margin: 0 auto;
+      isolation: isolate;
+    }
+    .envelope-scene::after {
+      content: ""; position: absolute; inset: 30% 9% 5%; border-radius: 50%; z-index: -1;
+      background: radial-gradient(ellipse, #fff0c775, transparent 68%);
+    }
+    .envelope {
+      position: relative; width: 100%; aspect-ratio: 1.55; transform: rotate(-3deg);
+      perspective: 1100px; isolation: isolate;
+      transition: transform .5s ease;
+    }
+    .envelope.open { transform: rotate(0); }
+    .env-back {
+      position: absolute; inset: 0; border-radius: 5px;
+      background: linear-gradient(155deg, #bca6d0, #d3bedf 50%, #c5aed5);
+      box-shadow: 0 18px 37px -12px #76568750, 0 3px 7px #70527b22;
+      border: 1px solid #ab90bc; z-index: 1;
+    }
+    .env-lining { position: absolute; inset: 8px 7px 24%; background: repeating-linear-gradient(45deg, #c8b2d7 0, #c8b2d7 3px, #d6c4e1 3px, #d6c4e1 5px); border-radius: 3px; z-index: 1; }
+    .paper-peek {
+      position: absolute; left: 9%; bottom: 8%; width: 82%; height: 84%; padding: 22px;
+      background: linear-gradient(0deg, transparent 49.5%, #d9cfc566 50%, transparent 50.5%), #fffaf0;
+      border: 1px solid #d8cad7; border-radius: 2px; z-index: 2;
+      box-shadow: 0 0 12px #80658b13;
+      transition: transform .65s .2s cubic-bezier(.2,.7,.2,1), box-shadow .5s;
+    }
+    .paper-peek::before { content: ""; position: absolute; inset: 10px; border: 1px solid #b296bf33; }
+    .paper-peek svg { width: 24px; height: 24px; margin: 0 auto 8px; color: #b79acb; }
+    .paper-peek .peek-title { font-family: var(--serif); font-size: clamp(17px, 3vw, 24px); font-style: italic; }
+    .paper-lines { width: 76%; height: 36px; margin: 14px auto; background: repeating-linear-gradient(to bottom, transparent 0, transparent 10px, #c7b8c450 10px, #c7b8c450 11px); }
+    .envelope.open .paper-peek { transform: translateY(-44%); box-shadow: 0 -8px 22px #71548114; }
+    .env-front {
+      position: absolute; inset: 0; border-radius: 4px; z-index: 4; overflow: hidden;
+      background: linear-gradient(155deg, #dac9e6, #cbb3dc 68%, #c4aad5);
+      clip-path: polygon(0 20%, 50% 58%, 100% 20%, 100% 100%, 0 100%);
+    }
+    .env-front::before, .env-front::after { content: ""; position: absolute; width: 75%; height: 1px; top: 58%; background: #aa8db9aa; transform-origin: left; }
+    .env-front::before { left: 0; transform: rotate(30deg); }
+    .env-front::after { left: 50%; transform: rotate(-30deg); }
+    .flap-wrap { position: absolute; left: 0; top: 0; width: 100%; height: 59%; z-index: 5; transform-origin: top; transition: transform .6s .1s cubic-bezier(.3,.7,.3,1); filter: drop-shadow(0 3px 2px #8c6e9b33); }
+    .flap { position: absolute; inset: 0; background: linear-gradient(170deg, #e2d3ec, #cdb5df); clip-path: polygon(0 0, 100% 0, 51% 100%, 49% 100%); border-top: 1px solid #bea3ce; }
+    .envelope.open .flap-wrap { transform: rotateX(133deg) scaleY(.62); z-index: 0; filter: drop-shadow(0 -3px 2px #8c6e9b22); }
+    .envelope-front-text { position: absolute; left: 9%; right: 9%; top: 49%; z-index: 6; pointer-events: none; }
+    .address { font-family: var(--note); font-style: italic; font-size: clamp(26px, 4.2vw, 37px); line-height: 1.3; color: #553b66; }
+    .envelope-description { max-width: 310px; margin: 7px auto 0; font-size: 15px; line-height: 1.45; color: #654c74; }
+    .sender { margin-top: 15px; font-size: 14px; line-height: 1.4; color: #644873; }
+    .postage {
+      position: absolute; width: 68px; height: 88px; right: 18px; top: 11px; padding: 6px; z-index: 6;
+      background: #f8f0f7; border: 2px dotted #bfa7cb; transform: rotate(5deg);
+      box-shadow: 1px 2px 3px #765b8115;
+    }
+    .postage svg { width: 38px; height: 53px; margin: 0 auto; }
+    .postage span { display: block; font-family: var(--serif); font-size: 10px; line-height: 1.5; letter-spacing: .03em; color: #6c5279; }
+    .ribbons { position: absolute; inset: 0; z-index: 7; pointer-events: none; transition: opacity .35s, transform .55s; }
+    .ribbon-vertical { position: absolute; top: -1px; bottom: -1px; left: 41%; width: 15%; background: linear-gradient(90deg, #9e7cb580, #d4bddfa8 35%, #ac8cbe99 70%, #9671aca6); box-shadow: 2px 0 3px #70518018; }
+    .ribbon-horizontal { position: absolute; top: 27%; left: -1px; right: -1px; height: 11%; background: linear-gradient(0deg, #9470aca6, #d4bddfb3 50%, #a380b999); box-shadow: 0 2px 4px #70518022; }
+    .bow { position: absolute; width: 160px; height: 116px; top: 10%; left: calc(50% - 80px); filter: drop-shadow(1px 3px 2px #75518544); }
+    .envelope.open .ribbons { opacity: 0; transform: translate(-10%, 15%) rotate(-12deg); pointer-events: none; }
+    .ribbon-hit { position: absolute; z-index: 8; width: 160px; height: 116px; top: 10%; left: calc(50% - 80px); background: transparent; border: 0; border-radius: 15px; }
+    .loose-ribbon { position: absolute; width: 115px; height: 225px; left: -45px; top: 38%; z-index: 6; pointer-events: none; opacity: 0; transform: translate(45px, -15px) rotate(4deg); transition: opacity .45s .15s, transform .6s .1s; }
+    .envelope.open .loose-ribbon { opacity: .9; transform: translate(0, 0) rotate(-12deg); }
+    .wax-control {
+      position: absolute; z-index: 9; width: 84px; padding: 0; border: 0; background: none;
+      top: 19%; left: calc(50% - 42px); color: #654178; text-align: center;
+      transition: transform .65s .06s cubic-bezier(.2,.75,.2,1);
+    }
+    .wax-control:disabled { cursor: default; opacity: 1; pointer-events: none; }
+    .wax-control > svg { width: 76px; height: 76px; margin: 0 auto; overflow: visible; filter: drop-shadow(1px 4px 3px #6f467e44); }
+    .wax-label { display: block; white-space: nowrap; width: 132px; margin: 9px 0 0 -24px; font-size: 15px; opacity: 0; line-height: 1.5; transition: opacity .2s; }
+    .envelope.open > .wax-control { transform: translate(clamp(80px, 20vw, 175px), clamp(113px, 20vw, 175px)) rotate(10deg); }
+    .envelope.open .wax-label { opacity: 1; }
+    .seal-impression { position: absolute; width: 76px; height: 76px; left: calc(50% - 38px); top: 19%; pointer-events: none; opacity: 0; z-index: 5; }
+    .envelope.reading .seal-impression { opacity: .17; }
+    .opening-actions { display: flex; justify-content: center; align-items: center; gap: 14px 24px; flex-wrap: wrap; position: relative; z-index: 10; }
+    .primary {
+      min-height: 51px; max-width: 100%; display: inline-flex; align-items: center; justify-content: center; gap: 13px;
+      padding: 13px 26px; color: #fffafc; background: #76518e; border: 1px solid #704786;
+      box-shadow: 0 7px 18px -8px #78538c66, inset 0 1px 0 #fff3; border-radius: 99px;
+      text-decoration: none; font-size: 16px; line-height: 1.5;
+      transition: transform .2s, background .2s;
+    }
+    .primary svg { width: 17px; height: 17px; }
+    .quiet-link { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 8px 5px; font-size: 16px; line-height: 1.5; }
+    .opening-status { max-width: 420px; margin: 18px auto 0; font-size: 16px; line-height: 1.6; color: #755f7d; }
+    .opening-status:empty { display: none; }
+    .date-note { margin-top: 22px; font-size: 14px; color: #796680; letter-spacing: .035em; }
+    .contents { width: min(100% - 44px, 1060px); margin: 12px auto 0; }
+    .stationery-layout { display: grid; grid-template-columns: minmax(0, 1fr) 270px; gap: 34px; align-items: start; }
+    .letter-stack { min-width: 0; position: relative; }
+    .letter {
+      position: relative; z-index: 2;
+      padding: 48px clamp(27px, 5.7vw, 66px) 43px;
+      background:
+        linear-gradient(0deg, transparent 33.26%, #ad91b713 33.3%, transparent 33.43%, transparent 66.55%, #ad91b718 66.6%, transparent 66.73%),
+        radial-gradient(ellipse at 100% 0, #fff0c655, transparent 36%),
+        repeating-linear-gradient(0deg, #927d6604 0, #927d6604 1px, transparent 1px, transparent 4px),
+        var(--paper);
+      border: 1px solid #dbccd0; border-radius: 3px;
+      box-shadow: 0 24px 46px -28px #72517a44, 0 3px 7px #84628e12;
+      scroll-margin-top: 24px;
+    }
+    .letter::before { content: ""; position: absolute; inset: 12px; border: 1px solid #b9a1c128; pointer-events: none; }
+    .letter-heading { margin-bottom: 33px; padding-bottom: 25px; border-bottom: 1px solid #cfbcd454; }
+    .letter-heading .little-flower { width: 30px; height: 30px; color: #b496cb; margin-bottom: 22px; }
+    .letter-heading .small-heading { font-family: var(--serif); font-style: italic; font-size: 18px; color: #7a617f; margin-bottom: 10px; line-height: 1.6; }
+    .letter-heading h2 { font-size: clamp(30px, 4vw, 43px); line-height: 1.18; letter-spacing: -.035em; }
+    .letter-copy p { margin-bottom: 19px; }
+    .letter-copy .salutation { font-family: var(--serif); font-size: 25px; margin-bottom: 20px; }
+    .letter-copy .emphasis { font-family: var(--serif); font-style: italic; font-size: 27px; color: #78538c; margin: 25px 0; line-height: 1.5; }
+    .letter-copy .rhythm { font-weight: 600; color: #644071; }
+    .letter-copy .signature { font-family: var(--note); font-style: italic; font-size: 27px; color: #735085; margin: 28px 0 0; }
+    .postscript { font-family: var(--note); font-style: italic; color: #7f6088; font-size: 16px; line-height: 1.7; max-width: 330px; margin: 28px 0 0 auto; transform: rotate(-1deg); }
+    .poetry-sheet {
+      position: relative; z-index: 1; margin: -15px 25px 0; padding: 37px 29px 26px;
+      background: #f5edf7; border: 1px solid #cdbad7; border-radius: 2px;
+      transform: rotate(-1.2deg); transform-origin: 50% 0;
+      box-shadow: 0 8px 20px -13px #75548444;
+      transition: transform .4s;
+      scroll-margin-top: 20px;
+    }
+    .poetry-sheet::before { content: ""; position: absolute; top: 0; bottom: 0; left: 50%; width: 1px; background: linear-gradient(#a98bb521, transparent 40%); pointer-events: none; }
+    .poetry-sheet[open] { transform: rotate(0); }
+    .poetry-sheet summary { position: relative; min-height: 44px; }
+    .poem-label { display: block; font-family: var(--serif); font-style: italic; font-size: 21px; line-height: 1.5; }
+    .summary-action { display: inline-flex; align-items: center; gap: 10px; margin-top: 15px; font-size: 15px; min-height: 44px; color: #6a477e; border-bottom: 1px solid #a98bb577; line-height: 1.5; }
+    .chevron { display: inline-block; width: 7px; height: 7px; border-right: 1px solid currentColor; border-bottom: 1px solid currentColor; transform: rotate(45deg); margin: 0 3px 4px; }
+    details[open] > summary .chevron { transform: rotate(225deg); margin-bottom: -3px; }
+    details:not([open]) .when-open, details[open] .when-closed { display: none; }
+    .poem { padding-top: 25px; margin-top: 15px; border-top: 1px solid #c7b1d24d; font-family: var(--serif); font-size: 20px; line-height: 1.7; }
+    .poem h3 { font-size: 29px; line-height: 1.25; margin-bottom: 12px; }
+    .poem .dedication { color: #80618b; font-family: var(--body); font-size: 14px; line-height: 1.5; margin-bottom: 28px; }
+    .stanza { margin-bottom: 24px; }
+    .stanza:last-child { margin-bottom: 0; color: #6d427f; font-style: italic; font-size: 26px; }
+    .keepsakes { padding-top: 35px; min-width: 0; }
+    .keepsakes-title { font-family: var(--note); font-style: italic; font-size: 17px; line-height: 1.6; color: #775d81; text-align: center; margin-bottom: 22px; }
+    .flower-note { position: relative; padding: 12px 20px 22px; background: #f8f2f0; border: 1px solid #d6c6d0; transform: rotate(2deg); box-shadow: 0 9px 19px -15px #72548166; }
+    .flower-note::before { content: ""; position: absolute; width: 72px; height: 23px; background: #fffaf17a; border-inline: 1px dashed #c7bbb2aa; top: 105px; left: calc(50% - 36px); transform: rotate(-10deg); pointer-events: none; z-index: 2; backdrop-filter: blur(1px); }
+    .pressed-flower { width: 100px; height: 155px; margin: 0 auto; transform-origin: 50% 90%; transition: transform .45s; }
+    .flower-note[open] .pressed-flower { transform: translateY(-6px) rotate(-7deg); }
+    .flower-note summary { text-align: center; }
+    .flower-note summary .object-title { display: block; font-family: var(--serif); font-size: 21px; line-height: 1.4; }
+    .flower-note .summary-action { margin-top: 9px; font-size: 14px; }
+    .flower-message { font-size: 16px; line-height: 1.8; margin-top: 20px; padding-top: 17px; border-top: 1px solid #d0bdcd77; }
+    .flower-message p + p { margin-top: 16px; }
+    .bookmark { position: relative; width: 225px; max-width: calc(100% - 14px); padding: 47px 23px 25px; margin: 48px auto 0; background: #fff9ed; border: 1px solid #d9cad0; border-radius: 3px 3px 18px 3px; box-shadow: 0 9px 20px -14px #77578055; transform: rotate(-2deg); }
+    .bookmark::before { content: ""; position: absolute; top: -18px; left: calc(50% - 12px); width: 24px; height: 55px; background: linear-gradient(90deg, #a382b9, #c4a8d7 48%, #a886be); clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 83%, 0 100%); }
+    .bookmark-front { font-family: var(--serif); font-size: 21px; line-height: 1.55; }
+    .bookmark cite { font-family: var(--body); font-size: 13px; line-height: 1.6; font-style: normal; display: block; margin-top: 18px; color: #78637f; }
+    .bookmark .turn-control { margin: 20px 0 0; min-height: 44px; padding: 8px 0; border: 0; border-bottom: 1px solid #baa3c4; background: none; color: #724f85; font-size: 15px; }
+    .bookmark-back { margin-top: 24px; border-top: 1px solid #cdbad5; padding-top: 20px; font-size: 16px; line-height: 1.8; }
+    .bookmark-back p + p { margin-top: 17px; }
+    .bookmark-back .back-label { display: block; font-family: var(--note); font-style: italic; font-size: 16px; margin-bottom: 13px; color: #745484; }
+    .bookmark.is-turned .bookmark-front { display: none; }
+    .bookmark.is-turned .bookmark-back { border: 0; margin: 0; padding: 0; }
+    .bookmark.is-turned cite { padding-top: 14px; border-top: 1px solid #d8cbd1; }
+    .photo-sleeve { position: relative; margin: 39px 0 0; padding: 13px 13px 52px; transform: rotate(3deg); isolation: isolate; }
+    .photo-sleeve::before { content: ""; position: absolute; inset: 8px 0 0; z-index: -1; background: #d5c1e1; border: 1px solid #c1a7d0; border-radius: 3px; }
+    .photo-sleeve::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 65px; border-top: 1px solid #cfbad9; background: linear-gradient(110deg, #f9f1f5, #eadcec); box-shadow: 0 -3px 6px #6946770c; z-index: 2; border-radius: 0 0 3px 3px; pointer-events: none; }
+    .photo-link { display: block; position: relative; padding: 9px; background: #fffbf3; border: 1px solid #e0d4d4; box-shadow: 0 5px 12px #63437618; transition: transform .35s ease; border-radius: 2px; }
+    .photo-link img { width: 100%; height: auto; object-fit: contain; }
+    .photo-link .view-photo { display: block; font-size: 14px; color: #73567f; margin: 8px 0 3px; text-align: center; line-height: 1.5; }
+    .photo-sleeve.is-slid .photo-link { transform: translateY(-12px) rotate(-2deg); }
+    .photo-caption { position: relative; z-index: 3; font-family: var(--note); font-style: italic; text-align: center; margin: 20px -4px -32px; font-size: 18px; line-height: 1.5; pointer-events: none; }
+    .photo-fallback { min-height: 150px; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 15px 8px; text-align: center; font-size: 16px; line-height: 1.7; color: #785888; }
+    .photo-fallback svg { width: 35px; height: 35px; margin-bottom: 14px; color: #b69ac9; }
+    .photo-link:not(.failed) .photo-fallback { display: none; }
+    .photo-link.failed .view-photo { display: none; }
+    .retry-photo { border: 0; border-bottom: 1px solid #b299be; background: transparent; font-size: 15px; min-height: 44px; margin-top: 15px; padding: 6px 5px; color: #76548a; }
+    .seal-dock { text-align: center; margin: 52px auto 0; }
+    .seal-dock .wax-control { position: relative; top: auto; left: auto; transform: rotate(-7deg); margin: 0 auto; }
+    .seal-dock .wax-label { opacity: 1; }
+    .seal-note { margin-top: 25px; background: #f7edf9; border: 1px solid #d6c2df; padding: 25px 22px; border-radius: 2px; font-family: var(--serif); font-size: 19px; line-height: 1.7; text-align: left; scroll-margin-top: 26px; }
+    .seal-note p + p { margin-top: 18px; }
+    .seal-note .tiny-heart { width: 20px; height: 20px; color: #aa81be; margin: 0 auto 17px; }
+    .ending { max-width: 670px; margin: 49px auto 0; text-align: center; padding: 30px 8px 0; border-top: 1px solid #c6b1cf77; }
+    .ending .closing { font-family: var(--serif); font-size: clamp(24px, 3.5vw, 31px); line-height: 1.5; letter-spacing: -.02em; }
+    .ending .signed { margin-top: 19px; font-family: var(--note); font-style: italic; color: #765487; font-size: 19px; }
+    .reading-controls { display: flex; flex-wrap: wrap; gap: 6px 22px; justify-content: center; margin-top: 22px; }
+    .reading-controls button { padding: 9px 3px; min-height: 44px; font-size: 15px; border: 0; border-bottom: 1px solid #bca4c7; background: none; color: #735082; }
+    .work-date { font-size: 14px; line-height: 1.7; color: #7c6582; text-align: center; padding: 30px 10px max(35px, env(safe-area-inset-bottom)); }
+    .lightbox { width: min(850px, calc(100% - 24px)); max-height: calc(100vh - 30px); max-height: calc(100dvh - 30px); padding: 16px; border: 1px solid #b89ac9; background: #fffaf1; color: var(--ink); box-shadow: 0 20px 70px #26132c66; border-radius: 7px; overflow: auto; }
+    .lightbox:not([open]) { display: none; }
+    .lightbox::backdrop { background: #30233bd9; }
+    .lightbox-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+    .lightbox h2 { font-size: 24px; line-height: 1.25; }
+    .close-lightbox { width: 46px; min-height: 46px; padding: 0; border: 1px solid #d8c7df; background: #eee3f4; border-radius: 50%; display: grid; place-items: center; flex-shrink: 0; }
+    .close-lightbox svg { width: 20px; height: 20px; }
+    .lightbox-image { width: 100%; height: auto; max-height: 72vh; max-height: 72dvh; object-fit: contain; }
+    .photo-loading { padding: 15px; text-align: center; font-size: 16px; color: var(--muted); }
+    .original-photo { display: block; width: fit-content; max-width: 100%; min-height: 44px; padding: 10px 0 2px; margin: 10px auto 0; font-size: 15px; text-align: center; }
+    .has-motion .contents.arriving .letter { animation: paper-settles .6s ease-out; }
+    .has-motion details[open] > .poem, .has-motion details[open] > .flower-message { animation: note-opens .4s ease-out; }
+    .has-motion .bookmark.turning { animation: turn-bookmark .42s ease-out; }
+    .has-motion .seal-note.revealing .tiny-heart { animation: heart-settles .55s ease-out; }
+    .instant, .instant * { transition: none !important; animation: none !important; }
+    @keyframes paper-settles { from { opacity: .7; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes note-opens { from { opacity: .6; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes turn-bookmark { 0% { transform: rotate(-2deg) scaleX(.87); } 100% { transform: rotate(-2deg) scaleX(1); } }
+    @keyframes heart-settles { 0% { opacity: 0; transform: scale(.6) translateY(5px); } 75% { transform: scale(1.12); } 100% { opacity: 1; transform: scale(1); } }
+    @media (hover: hover) {
+      .primary:hover { background: #634078; transform: translateY(-2px); }
+      .photo-link:hover { transform: translateY(-7px) rotate(-1deg); }
+      .wax-control:not(:disabled):hover > svg { filter: drop-shadow(1px 6px 4px #6f467e55); }
+    }
+    @media (max-width: 800px) {
+      .stationery-layout { grid-template-columns: minmax(0, 1fr); gap: 0; }
+      .contents { max-width: 650px; width: calc(100% - 34px); }
+      .letter { padding: 38px 28px 35px; }
+      .letter::before { inset: 8px; }
+      .letter-heading { margin-bottom: 26px; }
+      .keepsakes { display: grid; grid-template-columns: 1fr 1fr; gap: 32px 22px; padding: 38px 10px 0; align-items: start; }
+      .keepsakes-title { grid-column: 1 / -1; margin: 0; }
+      .flower-note { margin-top: 5px; }
+      .bookmark { width: 100%; max-width: none; margin-top: 13px; }
+      .photo-sleeve { margin: 0; }
+      .seal-dock { width: 100%; margin-top: 35px; }
+      .seal-note { font-size: 18px; }
+      .poetry-sheet { margin-inline: 14px; padding-inline: 25px; }
+    }
+    @media (max-width: 520px) {
+      .opening { padding-top: 35px; width: calc(100% - 26px); }
+      .kicker { font-size: 12px; letter-spacing: .13em; margin-bottom: 16px; }
+      h1 { font-size: clamp(31px, 8vw, 40px); max-width: 350px; }
+      .envelope-scene { padding: 83px 24px 95px; }
+      .envelope { aspect-ratio: 1.33; transform: rotate(0); }
+      .envelope-front-text { top: 48%; left: 8%; right: 8%; }
+      .address { font-size: 28px; }
+      .envelope-description { font-size: 14px; line-height: 1.45; margin-top: 4px; }
+      .sender { font-size: 13px; margin-top: 10px; }
+      .postage { width: 53px; height: 70px; top: 9px; right: 10px; padding: 4px; }
+      .postage svg { width: 31px; height: 42px; }
+      .postage span { font-size: 8px; }
+      .paper-peek { padding: 15px 12px; }
+      .paper-peek .peek-title { font-size: 18px; }
+      .paper-peek svg { width: 20px; height: 20px; margin-bottom: 6px; }
+      .wax-control { top: 17%; width: 72px; left: calc(50% - 36px); }
+      .wax-control > svg { width: 66px; height: 66px; }
+      .wax-label { width: 120px; margin-left: -24px; font-size: 14px; }
+      .envelope.open > .wax-control { transform: translate(clamp(75px, 23vw, 114px), 129px) rotate(9deg); }
+      .loose-ribbon { left: -22px; top: 42%; width: 85px; height: 178px; }
+      .bow { width: 135px; height: 98px; left: calc(50% - 67.5px); top: 9%; }
+      .opening-actions { gap: 4px; flex-direction: column; }
+      .opening-status { font-size: 15px; margin-top: 14px; padding-inline: 12px; }
+      .date-note { font-size: 13px; margin-top: 15px; }
+      .contents { width: calc(100% - 28px); margin-top: 5px; }
+      .letter { padding: 34px 25px 32px; }
+      .letter-heading .small-heading { font-size: 17px; }
+      .letter-heading h2 { font-size: 33px; }
+      .letter-copy { font-size: 17px; line-height: 1.85; }
+      .postscript { font-size: 16px; }
+      .poetry-sheet { margin-inline: 10px; padding: 35px 23px 24px; }
+      .poem { font-size: 19px; }
+      .poem-label { font-size: 20px; }
+      .keepsakes { display: block; padding: 37px 25px 0; }
+      .keepsakes-title { margin-bottom: 24px; }
+      .flower-note { max-width: 290px; margin: 0 auto; padding-inline: 25px; }
+      .bookmark { width: 240px; max-width: 100%; margin: 42px auto 0; padding-inline: 25px; }
+      .photo-sleeve { max-width: 290px; margin: 38px auto 0; }
+      .seal-dock { max-width: 320px; margin: 45px auto 0; }
+      .seal-note { font-size: 19px; }
+      .ending { margin-top: 37px; padding-inline: 12px; }
+      .reading-controls { gap: 6px 14px; }
+      .reading-controls button { font-size: 14px; }
+      .work-date { font-size: 14px; padding-inline: 20px; }
+    }
+    @media (max-width: 359px) {
+      .envelope-scene { padding-inline: 16px; }
+      .envelope { aspect-ratio: 1.24; }
+      .address { font-size: 25px; }
+      .sender { margin-top: 7px; }
+      .letter { padding-inline: 22px; }
+      .keepsakes { padding-inline: 20px; }
+      .poetry-sheet { margin-inline: 7px; padding-inline: 18px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+    @media print {
+      body { background: white; font-size: 11pt; }
+      body::before, .opening, .skip, .reading-controls, .wax-control, .turn-control, .retry-photo, .lightbox { display: none !important; }
+      .contents[hidden] { display: block !important; }
+      .contents { width: 100%; }
+      .stationery-layout { display: block; }
+      .letter { padding: 20px; box-shadow: none; }
+      .poetry-sheet { break-before: page; }
+      .poetry-sheet, .flower-note, .bookmark, .photo-sleeve { transform: none; box-shadow: none; }
+      details > :not(summary) { display: block !important; }
+      .bookmark-back[hidden], .seal-note[hidden] { display: block !important; }
+      .bookmark-front { display: block !important; }
+      .keepsakes { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+      .bookmark, .flower-note, .photo-sleeve { break-inside: avoid; }
+      .seal-dock { grid-column: 1 / -1; }
+      .ending { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#letter" class="skip" id="skip-letter">Skip to the letter</a>
+  <svg class="defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="petal-light" x1="0" y1="0" x2="1" y2="1">
+        <stop stop-color="#ffffff" stop-opacity=".33"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+      </linearGradient>
+      <linearGradient id="page-light" x1="0" y1="0" x2="1" y2="0">
+        <stop stop-color="#fff9e9"/><stop offset=".8" stop-color="#fffdf6"/><stop offset="1" stop-color="#e8dbcd"/>
+      </linearGradient>
+      <linearGradient id="right-page-light" x1="0" y1="0" x2="1" y2="0">
+        <stop stop-color="#e8dbcd"/><stop offset=".18" stop-color="#fffdf6"/><stop offset="1" stop-color="#fff8e8"/>
+      </linearGradient>
+      <radialGradient id="sun-halo"><stop stop-color="#fff3c9" stop-opacity=".8"/><stop offset="1" stop-color="#fff4d2" stop-opacity="0"/></radialGradient>
+      <symbol id="heart" viewBox="0 0 40 40">
+        <path d="M20 35C15 30 3 22 3 13 3 3 16 2 20 11 24 2 37 3 37 13c0 9-12 17-17 22Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="floret" viewBox="0 0 44 44">
+        <g fill="currentColor" stroke="#715386" stroke-opacity=".13" stroke-width=".6">
+          <path d="M22 22C-1 28-3 11 8 8 13-4 29 1 22 22Z"/>
+          <path d="M22 22C16-1 33-3 36 8c12 5 7 21-14 14Z"/>
+          <path d="M22 22C45 16 47 33 36 36c-5 12-21 7-14-14Z"/>
+          <path d="M22 22C28 45 11 47 8 36c-12-5-7-21 14-14Z"/>
+        </g>
+        <path d="M22 22C-1 28-3 11 8 8 13-4 29 1 22 22Z" fill="url(#petal-light)"/>
+        <path d="m12 12 10 10 10-10M12 32l10-10 10 10" fill="none" stroke="#755589" stroke-opacity=".2" stroke-width=".8"/>
+        <circle cx="22" cy="22" r="2.1" fill="#fff1c5"/>
+      </symbol>
+      <symbol id="hydrangea" viewBox="0 0 190 250">
+        <path d="M97 240Q82 180 98 99" fill="none" stroke="#8c9c87" stroke-width="3.5" stroke-linecap="round"/>
+        <path d="M92 190Q40 184 32 145q46-4 60 45Z" fill="#a7b59a"/>
+        <path d="M92 190q-24-20-48-33m16 11-4-14m18 25-23-4" stroke="#7a9279" stroke-width="1" fill="none"/>
+        <path d="M91 169q7-42 54-48-1 36-54 48Z" fill="#b8c2a6"/>
+        <path d="m94 166 39-34m-18 18 4-15m-7 18 18-2" stroke="#849a7d" stroke-width="1" fill="none"/>
+        <use href="#floret" x="58" y="5" width="49" height="49" style="color:#bd9ed8"/>
+        <use href="#floret" x="96" y="15" width="45" height="45" style="color:#a7a9d6"/>
+        <use href="#floret" x="27" y="27" width="46" height="46" style="color:#b4c3e3"/>
+        <use href="#floret" x="117" y="40" width="49" height="49" style="color:#abc1df"/>
+        <use href="#floret" x="5" y="60" width="48" height="48" style="color:#b9aed9"/>
+        <use href="#floret" x="124" y="82" width="48" height="48" style="color:#b7a2d5"/>
+        <use href="#floret" x="27" y="103" width="46" height="46" style="color:#bca1d4"/>
+        <use href="#floret" x="91" y="112" width="45" height="45" style="color:#d1acd9"/>
+        <use href="#floret" x="57" y="43" width="49" height="49" style="color:#d3b9e7"/>
+        <use href="#floret" x="94" y="58" width="44" height="44" style="color:#c2b4e0"/>
+        <use href="#floret" x="37" y="76" width="48" height="48" style="color:#c7a9dd"/>
+        <use href="#floret" x="74" y="87" width="47" height="47" style="color:#d6bce8"/>
+        <use href="#floret" x="66" y="132" width="32" height="32" style="color:#e0b7d1"/>
+        <use href="#floret" x="144" y="66" width="28" height="28" style="color:#dcb5d7"/>
+        <use href="#floret" x="23" y="50" width="29" height="29" style="color:#e1bedc"/>
+        <use href="#floret" x="84" y="27" width="28" height="28" style="color:#dac4e9"/>
+        <use href="#floret" x="106" y="98" width="28" height="28" style="color:#dfc3e7"/>
+      </symbol>
+      <symbol id="book-right" viewBox="0 0 380 240">
+        <ellipse cx="191" cy="214" rx="155" ry="12" fill="#786286" opacity=".1"/>
+        <path d="M190 112Q249 79 335 91l9 104q-80-9-153 27l-8-5Z" fill="#9778ac"/>
+        <path d="M190 110Q249 77 330 87l3 102q-75-11-143 29Z" fill="#e2d6ce" stroke="#c6b6bd" stroke-width=".8"/>
+        <path d="M190 106q59-35 139-24l-1 103q-74-10-138 25Z" fill="url(#right-page-light)" stroke="#cbbfc4" stroke-width=".8"/>
+        <path d="M202 112q50-26 114-20" fill="none" stroke="#e2d5d0" stroke-width="1"/>
+        <path d="M211 173q45-17 92-14M211 180q46-17 92-14" fill="none" stroke="#c7b4c7" stroke-width="1.2" opacity=".6"/>
+        <use href="#floret" x="244" y="112" width="29" height="29" style="color:#c1a5d6"/>
+        <path d="m259 143-3 9" stroke="#96a28f" stroke-width="1.2"/>
+      </symbol>
+      <symbol id="book-left" viewBox="0 0 380 240">
+        <path d="M190 112Q130 79 44 91l-9 104q80-9 155 27l8-5Z" fill="#9778ac"/>
+        <path d="M190 110Q131 77 49 87l-2 102q75-11 143 29Z" fill="#e2d6ce" stroke="#c6b6bd" stroke-width=".8"/>
+        <path d="M190 106q-59-35-139-24l1 103q74-10 138 25Z" fill="url(#page-light)" stroke="#cbbfc4" stroke-width=".8"/>
+        <path d="M177 112q-50-26-113-20" fill="none" stroke="#e2d5d0" stroke-width="1"/>
+        <path d="M78 115q46-2 86 16M78 127q46-2 86 16M78 139q46-2 86 16M78 151q35-1 62 8" stroke="#bdafc2" stroke-width="1.3" fill="none" opacity=".63"/>
+      </symbol>
+      <symbol id="open-book" viewBox="0 0 380 240">
+        <use href="#book-right" width="380" height="240"/>
+        <use href="#book-left" width="380" height="240"/>
+        <path d="M190 107v103" stroke="#b6a4b8" stroke-width="1.1"/>
+        <path d="M184 188q-2 24-6 46l8-4 6 6q-1-28 0-47" fill="#b69aca"/>
+      </symbol>
+    </defs>
+    <defs>
+      <radialGradient id="wax-light" cx=".35" cy=".27" r=".8"><stop stop-color="#c9acd9"/><stop offset=".5" stop-color="#ad87c4"/><stop offset="1" stop-color="#88619f"/></radialGradient>
+      <linearGradient id="satin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b090c4"/><stop offset=".4" stop-color="#ddc9e9"/><stop offset=".65" stop-color="#bc9dce"/><stop offset="1" stop-color="#8a639f"/></linearGradient>
+      <symbol id="wax" viewBox="0 0 100 100">
+        <path d="M49 5c8-4 15 2 20 5 10 0 13 6 16 14 8 5 9 13 7 22 4 9 0 17-7 23-2 11-10 15-19 15-7 8-17 10-25 4-10 3-17-2-21-10-10-3-15-12-12-22-6-8-5-17 2-24 0-11 6-18 16-19C32 5 40 3 49 5Z" fill="url(#wax-light)" stroke="#8b649f" stroke-width="1.2"/>
+        <circle cx="48" cy="47" r="30" fill="none" stroke="#8d659f" stroke-width="2" opacity=".55"/>
+        <path d="M23 45a25 25 0 0 1 46-14" stroke="#eddef3" stroke-opacity=".55" fill="none" stroke-width="1.3"/>
+        <path d="M48 64C21 49 26 34 36 33c6-1 10 4 12 9 2-5 6-10 12-9 10 1 15 16-12 31Z" fill="#a17ab7" stroke="#865e9c" stroke-width="1.4"/>
+        <path d="M30 43q4-15 16-1" stroke="#dac3e8" stroke-width="1.4" fill="none"/>
+      </symbol>
+      <symbol id="bow" viewBox="0 0 180 130">
+        <path d="M89 47C18-25-13 61 82 52 48 76 43 109 58 121l19-17 5 23q16-39 10-75" fill="url(#satin)" stroke="#9771ab" stroke-width="1"/>
+        <path d="M91 47c71-72 102 14 7 5 34 24 39 57 24 69l-19-17-5 23q-16-39-10-75" fill="url(#satin)" stroke="#9771ab" stroke-width="1"/>
+        <path d="M83 37q9-7 17 0l-1 24q-9 5-17-2Z" fill="url(#satin)" stroke="#9771ab"/>
+        <path d="M31 32q18-4 48 15M145 32q-18-4-44 15" stroke="#eddcf3" stroke-opacity=".6" fill="none" stroke-width="2"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="opening" id="envelope-top">
+    <p class="kicker">A letter to take with you</p>
+    <h1>Ma, I tucked a little love in here for you.</h1>
+    <div class="envelope-scene" aria-label="A lavender envelope tied with a purple ribbon and a heart-shaped wax seal">
+      <div class="envelope" id="envelope">
+        <div class="env-back" aria-hidden="true"></div>
+        <div class="env-lining" aria-hidden="true"></div>
+        <div class="paper-peek" aria-hidden="true">
+          <svg viewBox="0 0 44 44" focusable="false"><use href="#floret" width="44" height="44"/></svg>
+          <p class="peek-title">A letter to take with you</p>
+          <div class="paper-lines"></div>
+        </div>
+        <div class="env-front" aria-hidden="true"></div>
+        <div class="flap-wrap" aria-hidden="true"><div class="flap"></div></div>
+        <div class="envelope-front-text">
+          <p class="address">For My Love</p>
+          <p class="envelope-description hand">A little something before your new beginning.</p>
+          <p class="sender hand">From your Asvineee 💜</p>
+        </div>
+        <div class="postage" aria-hidden="true">
+          <svg viewBox="0 0 190 250" focusable="false"><use href="#hydrangea" width="190" height="250"/></svg>
+          <span>17 OCT 2026</span>
+        </div>
+        <div class="ribbons" aria-hidden="true">
+          <div class="ribbon-vertical"></div><div class="ribbon-horizontal"></div>
+          <svg class="bow" viewBox="0 0 180 130" focusable="false"><use href="#bow" width="180" height="130"/></svg>
+        </div>
+        <button class="ribbon-hit" id="ribbon-open" type="button" aria-label="Untie the purple ribbon and open the envelope" hidden></button>
+        <svg class="loose-ribbon" viewBox="0 0 115 225" aria-hidden="true" focusable="false">
+          <path d="M76 10C-2 7 2 75 64 51 112 31 39-6 31 69c-6 57 65 67 30 146l-13-12-14 8C79 144 4 139 13 70 21 7 72 35 57 43 16 66 9 28 76 27Z" fill="url(#satin)" stroke="#a786b8" stroke-width=".8"/>
+        </svg>
+        <svg class="seal-impression" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><use href="#wax" width="100" height="100"/></svg>
+        <button class="wax-control" id="wax-button" type="button" aria-label="One last thing: a little note under the seal" aria-controls="seal-note" aria-expanded="false" disabled tabindex="-1">
+          <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><use href="#wax" width="100" height="100"/></svg>
+          <span class="wax-label hand">One last thing…</span>
+        </button>
+      </div>
+    </div>
+    <div class="opening-actions">
+      <a class="primary" id="open-letter" href="#letter"><span id="open-label">Open your letter</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="quiet-link" id="read-now" href="#letter">Read it now</a>
+    </div>
+    <p class="opening-status hand" id="opening-status" role="status" aria-live="polite"></p>
+    <p class="date-note"><time datetime="2026-10-17">17 October 2026</time> · Your orientation day</p>
+  </header>
+
+  <main class="contents" id="contents">
+    <div class="stationery-layout">
+      <div class="letter-stack">
+        <article class="letter" id="letter" aria-labelledby="letter-title" tabindex="-1">
+          <header class="letter-heading">
+            <svg class="little-flower" viewBox="0 0 44 44" aria-hidden="true" focusable="false"><use href="#floret" width="44" height="44"/></svg>
+            <p class="small-heading">For the girl beginning something new.</p>
+            <h2 id="letter-title">I’m so proud of you, Ma.</h2>
+          </header>
+          <div class="letter-copy">
+            <p class="salutation">My Love,</p>
+            <p>Happy orientation day.</p>
+            <p>After the practical shifts, the reports, the studying, and everything it took to reach this point, here you are—beginning another part of your life.</p>
+            <p>I hope you let yourself feel proud for a moment.</p>
+            <p class="emphasis">I certainly am.</p>
+            <p>I hope this new chapter brings you kind people, opportunities to learn, growing confidence, and little moments when you realise how far you’ve come.</p>
+            <p>Give yourself time to find your feet, Ma. You’re allowed to ask questions and learn as you go.</p>
+            <p>And while you’re learning this new part of your life, I want to keep learning how to support you well.</p>
+            <p>I’ll do my best to listen when you need to talk, understand when you need rest, and keep making time for us with you.</p>
+            <p>Our days may become busier. Some calls might be shorter. We might have to plan a little more to catch each other.</p>
+            <p class="rhythm">We’ll find our rhythm.</p>
+            <p>A quick message before work. A little conversation when our schedules meet. A longer call when we have the time. Those moments will mean so much to me.</p>
+            <p>And we can keep telling each other what we need along the way.</p>
+            <p>I’m excited for your future, My Love. I want to hear about the things you learn, the people you meet, and the small victories you might otherwise forget to celebrate.</p>
+            <p>For today, take this new beginning one step at a time.</p>
+            <p>There is a very proud boyfriend behind this letter, cheering for you with his whole heart.</p>
+            <p>I love you, Ma.</p>
+            <p class="signature">Your Asvineee</p>
+          </div>
+          <p class="postscript">P.S. A forehead kiss has been included. Obviously.</p>
+        </article>
+
+        <details class="poetry-sheet" id="poetry">
+          <summary>
+            <span class="poem-label">Something I wanted to say a little differently.</span>
+            <span class="summary-action"><span class="when-closed">Unfold the poem</span><span class="when-open">Fold the poetry sheet</span><span class="chevron" aria-hidden="true"></span></span>
+          </summary>
+          <section class="poem" aria-labelledby="poem-title">
+            <h3 id="poem-title">Where Our Hours Meet</h3>
+            <p class="dedication">An original poem for you, Ma.</p>
+            <div id="poem-text">
+              <p class="stanza">We once turned a little walk<br>into three hours of stories.<br>I think of that now—<br>how easily time became ours.</p>
+              <p class="stanza">Soon, our days will have new shapes:<br>new places,<br>unfamiliar names,<br>little victories we haven’t told each other yet.</p>
+              <p class="stanza">I want to hear about yours.</p>
+              <p class="stanza">And when our hours don’t quite meet,<br>we’ll keep making room:<br>a message left for later,<br>a call we plan,<br>a sleepy kiss through the phone.</p>
+              <p class="stanza">Go meet the days you’ve worked for, Ma.<br>I’m cheering for all you’re becoming.</p>
+              <p class="stanza">Bring a hundred stories,<br>or sit with me without one.</p>
+              <p class="stanza">I’ll be glad for the same reason:</p>
+              <p class="stanza">it’s you.</p>
+            </div>
+          </section>
+        </details>
+      </div>
+
+      <aside class="keepsakes" aria-labelledby="keepsakes-title">
+        <h2 class="keepsakes-title" id="keepsakes-title">a few little things I tucked inside</h2>
+
+        <details class="flower-note">
+          <summary>
+            <svg class="pressed-flower" viewBox="0 0 190 250" aria-hidden="true" focusable="false"><use href="#hydrangea" width="190" height="250"/></svg>
+            <span class="object-title">A little bloom for your beginning.</span>
+            <span class="summary-action"><span class="when-closed">Lift the flower</span><span class="when-open">Tuck it back</span><span class="chevron" aria-hidden="true"></span></span>
+          </summary>
+          <div class="flower-message">
+            <p>For the days you feel confident,<br>and the days you’re still finding your way.</p>
+            <p>You’re allowed to grow at your own pace, Ma.</p>
+          </div>
+        </details>
+
+        <section class="bookmark" id="bookmark" aria-label="A poetry bookmark with a personal note on the back">
+          <blockquote class="bookmark-front" id="bookmark-front">
+            <p>“I love thee to the level of every day’s<br>Most quiet need, by sun and candle-light.”</p>
+          </blockquote>
+          <div class="bookmark-back" id="bookmark-back" aria-live="polite" aria-atomic="true">
+            <span class="back-label">On the back, from me…</span>
+            <p>I’m looking forward to loving you in those little everyday moments too, Ma.</p>
+            <p>The quick hellos.<br>The stories after work.<br>The time we make for each other.</p>
+          </div>
+          <cite>— Elizabeth Barrett Browning,<br><span>Sonnet 43</span></cite>
+          <button class="turn-control" id="turn-bookmark" type="button" aria-controls="bookmark-back" aria-expanded="false" hidden>Turn over ↻</button>
+        </section>
+
+        <figure class="photo-sleeve" id="photo-sleeve">
+          <a class="photo-link" id="photo-link" href="https://raw.githubusercontent.com/Cipher02/MyFavDay/refs/heads/main/kiss%20on%20forehead.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Open our photograph at full size">
+            <img id="keepsake-photo" src="https://raw.githubusercontent.com/Cipher02/MyFavDay/refs/heads/main/kiss%20on%20forehead.jpeg" alt="A photograph of us sharing a forehead kiss." loading="lazy" decoding="async" referrerpolicy="no-referrer">
+            <span class="view-photo">Slide out &amp; view ↗</span>
+            <span class="photo-fallback" id="photo-fallback">
+              <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><use href="#heart" width="40" height="40"/></svg>
+              <span>Your forehead kiss is still included. 💜</span>
+            </span>
+          </a>
+          <figcaption class="photo-caption">One to take with you.</figcaption>
+        </figure>
+
+        <div class="seal-dock" id="seal-dock">
+          <section class="seal-note" id="seal-note" aria-label="A little note under the seal" aria-live="polite" aria-atomic="true" tabindex="-1">
+            <svg class="tiny-heart" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><use href="#heart" width="40" height="40"/></svg>
+            <p>Your boyfriend has reviewed the situation carefully.</p>
+            <p>His findings:</p>
+            <p>Very proud of you.<br>Very fond of you.<br>Already looking forward to your next ‘hiiii.’</p>
+            <p>Good luck today, My Love.</p>
+          </section>
+        </div>
+      </aside>
+    </div>
+
+    <section class="ending" aria-label="With love">
+      <p class="closing">Go enjoy your new beginning, Ma.<br>We’ll keep finding our little moments along the way.</p>
+      <p class="signed">With love, your Asvineee.</p>
+      <nav class="reading-controls" aria-label="Letter controls">
+        <a class="quiet-link" id="read-again" href="#letter">Read it again</a>
+        <button id="fold-away" type="button" hidden>Fold it away for now</button>
+      </nav>
+    </section>
+  </main>
+
+  <footer class="work-date">A new beginning today.<br>First day at work · <time datetime="2026-10-19">Monday, 19 October 2026</time></footer>
+
+  <dialog class="lightbox" id="photo-dialog" aria-labelledby="photo-dialog-title">
+    <header class="lightbox-head">
+      <h2 id="photo-dialog-title">One to take with you.</h2>
+      <button type="button" class="close-lightbox" id="close-photo" aria-label="Close photograph" autofocus><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+    </header>
+    <p class="photo-loading" id="photo-loading" role="status">Unwrapping this little memory…</p>
+    <img class="lightbox-image" id="full-photo" alt="Our photograph, shown complete and without cropping." decoding="async" referrerpolicy="no-referrer" hidden>
+    <div class="photo-fallback" id="full-photo-fallback" hidden>
+      <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><use href="#heart" width="40" height="40"/></svg>
+      <p>Your forehead kiss is still included. 💜</p>
+      <button class="retry-photo" id="retry-photo" type="button">Try the photograph again</button>
+    </div>
+    <a class="original-photo" id="original-photo" href="https://raw.githubusercontent.com/Cipher02/MyFavDay/refs/heads/main/kiss%20on%20forehead.jpeg" target="_blank" rel="noopener noreferrer">Open the original photograph ↗</a>
+  </dialog>
+
+  <script>
+    (() => {
+      'use strict';
+
+      // EDITABLE SETTINGS. All personal writing is kept in the HTML above so
+      // the complete letter also works without JavaScript.
+      const CONFIG = Object.freeze({
+        photoUrl: 'https://raw.githubusercontent.com/Cipher02/MyFavDay/refs/heads/main/kiss%20on%20forehead.jpeg',
+        openLabel: 'Open your letter',
+        unfoldLabel: 'Unfold your letter',
+        readLabel: 'Read your letter again',
+        readyMessage: 'The ribbon is loose. Your letter is ready to unfold.',
+        foldedMessage: 'A little love, here whenever you want to read it again.'
+      });
+      const $ = id => document.getElementById(id);
+      const envelope = $('envelope'), contents = $('contents'), letter = $('letter');
+      const openLink = $('open-letter'), openLabel = $('open-label'), readNow = $('read-now');
+      const wax = $('wax-button'), sealDock = $('seal-dock'), sealNote = $('seal-note');
+      const status = $('opening-status'), foldButton = $('fold-away');
+      const ribbonButton = $('ribbon-open');
+      const motion = typeof window.matchMedia === 'function'
+        ? window.matchMedia('(prefers-reduced-motion: reduce)') : { matches: true };
+      let state = 0; // 0: tied envelope; 1: open envelope; 2: unfolded letter.
+      let bookmarkTurned = false;
+      let lastPhotoFocus = null;
+      let previousOverflow = '';
+      let motionFrame = 0;
+
+      function focusAndRead(target, instantly = false) {
+        target.focus({ preventScroll: true });
+        target.scrollIntoView({ behavior: (instantly || motion.matches) ? 'auto' : 'smooth', block: 'start' });
+      }
+
+      function clearInstantStyle() {
+        window.cancelAnimationFrame(motionFrame);
+        motionFrame = window.requestAnimationFrame(() => {
+          motionFrame = window.requestAnimationFrame(() => envelope.classList.remove('instant'));
+        });
+      }
+
+      function openEnvelope() {
+        if (state !== 0) return;
+        state = 1;
+        envelope.classList.add('open');
+        ribbonButton.hidden = true;
+        wax.disabled = false;
+        wax.removeAttribute('tabindex');
+        openLabel.textContent = CONFIG.unfoldLabel;
+        status.textContent = CONFIG.readyMessage;
+      }
+
+      function unfoldLetter({ skip = false, focus = true } = {}) {
+        if (skip || motion.matches) envelope.classList.add('instant');
+        state = 2;
+        envelope.classList.add('open', 'reading');
+        ribbonButton.hidden = true;
+        contents.hidden = false;
+        contents.classList.toggle('arriving', !skip && !motion.matches);
+        sealDock.insertBefore(wax, sealNote);
+        wax.disabled = false;
+        wax.removeAttribute('tabindex');
+        openLabel.textContent = CONFIG.readLabel;
+        readNow.hidden = true;
+        status.textContent = '';
+        if (focus) focusAndRead(letter, skip);
+        if (skip || motion.matches) clearInstantStyle();
+      }
+
+      function foldLetter() {
+        // Reset the same two-step sequence. There are no timers holding the
+        // envelope closed, so it can be reopened immediately.
+        state = 0;
+        contents.hidden = true;
+        contents.classList.remove('arriving');
+        envelope.appendChild(wax);
+        wax.disabled = true;
+        wax.setAttribute('tabindex', '-1');
+        wax.setAttribute('aria-expanded', 'false');
+        sealNote.hidden = true;
+        envelope.classList.remove('open', 'reading');
+        ribbonButton.hidden = false;
+        readNow.hidden = false;
+        openLabel.textContent = CONFIG.openLabel;
+        status.textContent = CONFIG.foldedMessage;
+        openLink.focus({ preventScroll: true });
+        $('envelope-top').scrollIntoView({ behavior: motion.matches ? 'auto' : 'smooth', block: 'start' });
+      }
+
+      openLink.addEventListener('click', event => {
+        event.preventDefault();
+        if (state === 0) openEnvelope(); else unfoldLetter();
+      });
+      ribbonButton.addEventListener('click', () => {
+        openEnvelope();
+        openLink.focus({ preventScroll: true });
+      });
+      [readNow, $('skip-letter')].forEach(link => link.addEventListener('click', event => {
+        event.preventDefault();
+        unfoldLetter({ skip: true });
+      }));
+      $('read-again').addEventListener('click', event => {
+        event.preventDefault();
+        unfoldLetter({ skip: true });
+      });
+      foldButton.addEventListener('click', foldLetter);
+
+      wax.addEventListener('click', () => {
+        const comingFromEnvelope = state !== 2;
+        if (comingFromEnvelope) unfoldLetter({ skip: true, focus: false });
+        const opening = sealNote.hidden;
+        sealNote.hidden = !opening;
+        wax.setAttribute('aria-expanded', String(opening));
+        sealNote.classList.toggle('revealing', opening && !motion.matches);
+        if (comingFromEnvelope && opening) focusAndRead(sealNote, true);
+      });
+
+      const bookmark = $('bookmark'), bookmarkBack = $('bookmark-back'), turn = $('turn-bookmark');
+      turn.addEventListener('click', () => {
+        bookmarkTurned = !bookmarkTurned;
+        bookmark.classList.toggle('is-turned', bookmarkTurned);
+        bookmarkBack.hidden = !bookmarkTurned;
+        turn.textContent = bookmarkTurned ? 'Turn back ↻' : 'Turn over ↻';
+        turn.setAttribute('aria-expanded', String(bookmarkTurned));
+        // A very small paper motion; the actual text remains flat and sharp.
+        bookmark.classList.remove('turning');
+        if (!motion.matches && typeof bookmark.animate === 'function') {
+          if (typeof bookmark.getAnimations === 'function') bookmark.getAnimations().forEach(animation => animation.cancel());
+          bookmark.animate([
+            { transform: 'rotate(-2deg) scaleX(.96)' },
+            { transform: 'rotate(-2deg) scaleX(1)' }
+          ], { duration: 260, easing: 'ease-out' });
+        }
+      });
+
+      const photo = $('keepsake-photo'), photoLink = $('photo-link'), fullPhoto = $('full-photo');
+      const photoDialog = $('photo-dialog'), photoFallback = $('full-photo-fallback'), loading = $('photo-loading');
+      const hasDialog = typeof photoDialog.showModal === 'function';
+
+      function smallPhotoLoaded() {
+        photo.hidden = false;
+        photoLink.classList.remove('failed');
+      }
+      function smallPhotoFailed() {
+        photo.hidden = true;
+        photoLink.classList.add('failed');
+      }
+      photo.addEventListener('load', smallPhotoLoaded);
+      photo.addEventListener('error', smallPhotoFailed);
+      if (photo.complete) { if (photo.naturalWidth > 0) smallPhotoLoaded(); else smallPhotoFailed(); }
+      photoLink.href = CONFIG.photoUrl;
+      $('original-photo').href = CONFIG.photoUrl;
+      if (photo.getAttribute('src') !== CONFIG.photoUrl) photo.src = CONFIG.photoUrl;
+
+      fullPhoto.addEventListener('load', () => {
+        fullPhoto.hidden = false;
+        loading.hidden = true;
+        photoFallback.hidden = true;
+      });
+      fullPhoto.addEventListener('error', () => {
+        fullPhoto.hidden = true;
+        loading.hidden = true;
+        photoFallback.hidden = false;
+      });
+
+      function loadFullPhoto(retry = false) {
+        photoFallback.hidden = true;
+        loading.hidden = false;
+        fullPhoto.hidden = true;
+        if (retry) fullPhoto.removeAttribute('src');
+        if (fullPhoto.getAttribute('src') !== CONFIG.photoUrl) fullPhoto.src = CONFIG.photoUrl;
+        else if (fullPhoto.complete && fullPhoto.naturalWidth > 0) {
+          loading.hidden = true;
+          fullPhoto.hidden = false;
+        } else if (fullPhoto.complete) {
+          loading.hidden = true;
+          photoFallback.hidden = false;
+        }
+      }
+
+      photoLink.addEventListener('click', event => {
+        // Older browsers retain a working link to the original photograph.
+        if (!hasDialog) return;
+        event.preventDefault();
+        if (photoDialog.open) return;
+        lastPhotoFocus = photoLink;
+        $('photo-sleeve').classList.add('is-slid');
+        photoDialog.showModal();
+        previousOverflow = document.body.style.overflow;
+        document.body.style.overflow = 'hidden';
+        $('close-photo').focus();
+        loadFullPhoto();
+      });
+      $('close-photo').addEventListener('click', () => { if (photoDialog.open) photoDialog.close(); });
+      photoDialog.addEventListener('click', event => {
+        if (event.target !== photoDialog) return;
+        const rect = photoDialog.getBoundingClientRect();
+        if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) photoDialog.close();
+      });
+      // Native dialog supports Escape and keeps Tab inside the photo viewer.
+      photoDialog.addEventListener('close', () => {
+        document.body.style.overflow = previousOverflow;
+        if (lastPhotoFocus && lastPhotoFocus.isConnected) lastPhotoFocus.focus({ preventScroll: true });
+      });
+      $('retry-photo').addEventListener('click', () => {
+        loadFullPhoto(true);
+        photo.removeAttribute('src');
+        photo.src = CONFIG.photoUrl;
+      });
+
+      function updateMotion() {
+        document.documentElement.classList.toggle('has-motion', !motion.matches);
+        if (motion.matches && typeof bookmark.getAnimations === 'function') bookmark.getAnimations().forEach(animation => animation.cancel());
+      }
+      if (typeof motion.addEventListener === 'function') motion.addEventListener('change', updateMotion);
+      else if (typeof motion.addListener === 'function') motion.addListener(updateMotion);
+
+      // Progressive enhancement happens only after every handler is attached.
+      // If JavaScript is disabled, the letter, poem, flower note, bookmark
+      // reverse and seal note all remain available in the document.
+      updateMotion();
+      bookmarkBack.hidden = true;
+      turn.hidden = false;
+      foldButton.hidden = false;
+      ribbonButton.hidden = false;
+      sealNote.hidden = true;
+      if (window.location.hash === '#letter' || window.location.hash === '#poetry') {
+        unfoldLetter({ skip: true, focus: false });
+        if (window.location.hash === '#poetry') $('poetry').open = true;
+      } else {
+        contents.hidden = true;
+      }
+    })();
+  </script>
+</body>
+</html>
